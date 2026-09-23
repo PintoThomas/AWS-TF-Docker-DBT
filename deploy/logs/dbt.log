@@ -1,0 +1,1051 @@
+[0m18:22:09.123281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF4C51F1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF4A38C890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF4AA64560>]}
+
+
+============================== 18:22:09.280445 | baef4470-92d0-495d-9574-4869341e9b62 ==============================
+[0m18:22:09.280445 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:22:09.281441 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:22:09.515588 [info ] [MainThread]: dbt version: 1.12.5
+[0m18:22:09.515588 [info ] [MainThread]: python version: 3.12.13
+[0m18:22:09.515588 [info ] [MainThread]: python path: D:\Users\thoma\miniconda3\envs\py312\python.exe
+[0m18:22:09.515588 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:22:12.732616 [info ] [MainThread]: Using profiles dir at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy
+[0m18:22:12.732616 [info ] [MainThread]: Using profiles.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\profiles.yml
+[0m18:22:12.732616 [info ] [MainThread]: Using dbt_project.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\dbt_project.yml
+[0m18:22:12.876536 [info ] [MainThread]: Configuration:
+[0m18:22:12.877502 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:22:12.877915 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:22:12.878437 [info ] [MainThread]: Required dependencies:
+[0m18:22:12.878938 [debug] [MainThread]: Executing "git --help"
+[0m18:22:12.927027 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:22:12.927027 [debug] [MainThread]: STDERR: "b''"
+[0m18:22:12.927027 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:22:12.927027 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:22:12.932360 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:22:12.932360 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "tf_docker_dbt", target "dev" invalid: 'region_name' is a required property
+
+
+[0m18:22:12.932360 [debug] [MainThread]: Command `dbt debug` failed at 18:22:12.932360 after 4.00 seconds
+[0m18:22:12.932360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF4C51F1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF4D7C95B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF4C671550>]}
+[0m18:22:12.932360 [debug] [MainThread]: Flushing usage events
+[0m18:22:13.898780 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:23:08.481981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AF696E1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AF345FE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AF6707DA0>]}
+
+
+============================== 18:23:08.485502 | 4c56724a-7060-4446-90af-f26ae814da19 ==============================
+[0m18:23:08.485502 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:23:08.485502 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:23:08.506873 [info ] [MainThread]: dbt version: 1.12.5
+[0m18:23:08.506873 [info ] [MainThread]: python version: 3.12.13
+[0m18:23:08.506873 [info ] [MainThread]: python path: D:\Users\thoma\miniconda3\envs\py312\python.exe
+[0m18:23:08.506873 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:23:09.252386 [info ] [MainThread]: Using profiles dir at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy
+[0m18:23:09.252386 [info ] [MainThread]: Using profiles.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\profiles.yml
+[0m18:23:09.252386 [info ] [MainThread]: Using dbt_project.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\dbt_project.yml
+[0m18:23:09.252386 [info ] [MainThread]: adapter type: athena
+[0m18:23:09.252386 [info ] [MainThread]: adapter version: 1.11.1
+[0m18:23:09.379899 [info ] [MainThread]: Configuration:
+[0m18:23:09.379899 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:23:09.379899 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:23:09.379899 [info ] [MainThread]: Required dependencies:
+[0m18:23:09.379899 [debug] [MainThread]: Executing "git --help"
+[0m18:23:09.419357 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:23:09.419357 [debug] [MainThread]: STDERR: "b''"
+[0m18:23:09.419357 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:23:09.419357 [info ] [MainThread]: Connection:
+[0m18:23:09.419357 [info ] [MainThread]:   assume_role_arn: None
+[0m18:23:09.419357 [info ] [MainThread]:   assume_role_duration_seconds: 3600
+[0m18:23:09.419357 [info ] [MainThread]:   assume_role_external_id: None
+[0m18:23:09.419357 [info ] [MainThread]:   assume_role_session_name: dbt-athena
+[0m18:23:09.419357 [info ] [MainThread]:   aws_access_key_id: None
+[0m18:23:09.419357 [info ] [MainThread]:   aws_profile_name: None
+[0m18:23:09.419357 [info ] [MainThread]:   connection_manager: api
+[0m18:23:09.419357 [info ] [MainThread]:   database: awsdatacatalog
+[0m18:23:09.419357 [info ] [MainThread]:   debug_query_state: False
+[0m18:23:09.419357 [info ] [MainThread]:   endpoint_url: None
+[0m18:23:09.419357 [info ] [MainThread]:   lf_tags_database: None
+[0m18:23:09.419357 [info ] [MainThread]:   num_boto3_retries: None
+[0m18:23:09.419357 [info ] [MainThread]:   num_iceberg_retries: 3
+[0m18:23:09.419357 [info ] [MainThread]:   num_retries: 5
+[0m18:23:09.419357 [info ] [MainThread]:   poll_interval: 1.0
+[0m18:23:09.419357 [info ] [MainThread]:   region_name: eu-west-3
+[0m18:23:09.419357 [info ] [MainThread]:   s3_data_dir: s3://tf-docker-dbt-marts-data/dbt_marts/
+[0m18:23:09.419357 [info ] [MainThread]:   s3_data_naming: schema_table
+[0m18:23:09.419357 [info ] [MainThread]:   s3_staging_dir: s3://tf-docker-dbt-marts-data/athena_query_results/
+[0m18:23:09.419357 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m18:23:09.419357 [info ] [MainThread]:   schema: analytics_dev
+[0m18:23:09.419357 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m18:23:09.435404 [info ] [MainThread]:   skip_workgroup_check: False
+[0m18:23:09.435742 [info ] [MainThread]:   spark_work_group: None
+[0m18:23:09.435742 [info ] [MainThread]:   work_group: None
+[0m18:23:09.439085 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:23:10.081273 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m18:23:10.081273 [debug] [MainThread]: Using athena connection "debug"
+[0m18:23:10.081273 [debug] [MainThread]: On debug: select 1 as id
+[0m18:23:10.081273 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:23:10.654460 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Execute: select 1 as id
+[0m18:23:11.532187 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query 927b5b0a-4b6c-4411-8dbf-1124c598c226 started
+[0m18:23:11.625576 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query 927b5b0a-4b6c-4411-8dbf-1124c598c226 has state RUNNING
+[0m18:23:12.776050 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query 927b5b0a-4b6c-4411-8dbf-1124c598c226 has state SUCCEEDED
+[0m18:23:12.895355 [debug] [MainThread]: SQL status: OK 0 in 2.814 seconds
+[0m18:23:12.895355 [debug] [MainThread]: On debug: No close available on handle
+[0m18:23:12.895355 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:23:12.895355 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:23:12.910825 [debug] [MainThread]: Command `dbt debug` succeeded at 18:23:12.910825 after 4.60 seconds
+[0m18:23:12.910825 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:23:12.910825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AF696E1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AF8485190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AF99EC140>]}
+[0m18:23:12.910825 [debug] [MainThread]: Flushing usage events
+[0m18:23:13.450337 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:42:39.540848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024571B9FDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002456F628DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024570052150>]}
+
+
+============================== 18:42:39.544537 | 55861479-06d6-4ff7-bcef-aa667c416a0d ==============================
+[0m18:42:39.544537 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:42:39.544537 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:42:39.570021 [info ] [MainThread]: dbt version: 1.12.5
+[0m18:42:39.570906 [info ] [MainThread]: python version: 3.12.13
+[0m18:42:39.570906 [info ] [MainThread]: python path: D:\Users\thoma\miniconda3\envs\py312\python.exe
+[0m18:42:39.570906 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:42:40.323489 [info ] [MainThread]: Using profiles dir at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy
+[0m18:42:40.323489 [info ] [MainThread]: Using profiles.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\profiles.yml
+[0m18:42:40.323489 [info ] [MainThread]: Using dbt_project.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\dbt_project.yml
+[0m18:42:40.339111 [info ] [MainThread]: adapter type: athena
+[0m18:42:40.340223 [info ] [MainThread]: adapter version: 1.11.1
+[0m18:42:40.469754 [info ] [MainThread]: Configuration:
+[0m18:42:40.469754 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:42:40.469754 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:42:40.469754 [info ] [MainThread]: Required dependencies:
+[0m18:42:40.469754 [debug] [MainThread]: Executing "git --help"
+[0m18:42:40.506462 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:42:40.506462 [debug] [MainThread]: STDERR: "b''"
+[0m18:42:40.506462 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:42:40.506462 [info ] [MainThread]: Connection:
+[0m18:42:40.506462 [info ] [MainThread]:   assume_role_arn: None
+[0m18:42:40.506462 [info ] [MainThread]:   assume_role_duration_seconds: 3600
+[0m18:42:40.506462 [info ] [MainThread]:   assume_role_external_id: None
+[0m18:42:40.506462 [info ] [MainThread]:   assume_role_session_name: dbt-athena
+[0m18:42:40.506462 [info ] [MainThread]:   aws_access_key_id: None
+[0m18:42:40.506462 [info ] [MainThread]:   aws_profile_name: None
+[0m18:42:40.506462 [info ] [MainThread]:   connection_manager: api
+[0m18:42:40.506462 [info ] [MainThread]:   database: awsdatacatalog
+[0m18:42:40.506462 [info ] [MainThread]:   debug_query_state: False
+[0m18:42:40.506462 [info ] [MainThread]:   endpoint_url: None
+[0m18:42:40.506462 [info ] [MainThread]:   lf_tags_database: None
+[0m18:42:40.506462 [info ] [MainThread]:   num_boto3_retries: None
+[0m18:42:40.506462 [info ] [MainThread]:   num_iceberg_retries: 3
+[0m18:42:40.506462 [info ] [MainThread]:   num_retries: 5
+[0m18:42:40.506462 [info ] [MainThread]:   poll_interval: 1.0
+[0m18:42:40.506462 [info ] [MainThread]:   region_name: eu-west-3
+[0m18:42:40.506462 [info ] [MainThread]:   s3_data_dir: s3://tf-docker-dbt-marts-data/dbt_marts/
+[0m18:42:40.506462 [info ] [MainThread]:   s3_data_naming: schema_table
+[0m18:42:40.506462 [info ] [MainThread]:   s3_staging_dir: s3://tf-docker-dbt-marts-data/athena_query_results/
+[0m18:42:40.506462 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m18:42:40.506462 [info ] [MainThread]:   schema: analytics_dev
+[0m18:42:40.506462 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m18:42:40.522092 [info ] [MainThread]:   skip_workgroup_check: False
+[0m18:42:40.522270 [info ] [MainThread]:   spark_work_group: None
+[0m18:42:40.522270 [info ] [MainThread]:   work_group: None
+[0m18:42:40.522270 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:42:40.834850 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m18:42:40.834850 [debug] [MainThread]: Using athena connection "debug"
+[0m18:42:40.850472 [debug] [MainThread]: On debug: select 1 as id
+[0m18:42:40.850472 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:42:40.999767 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Execute: select 1 as id
+[0m18:42:41.336085 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query f711468c-291f-4f97-9bc0-f185f0820dd6 started
+[0m18:42:41.390915 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query f711468c-291f-4f97-9bc0-f185f0820dd6 has state QUEUED
+[0m18:42:42.472601 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query f711468c-291f-4f97-9bc0-f185f0820dd6 has state SUCCEEDED
+[0m18:42:42.574097 [debug] [MainThread]: SQL status: OK 0 in 1.735 seconds
+[0m18:42:42.574097 [debug] [MainThread]: On debug: No close available on handle
+[0m18:42:42.574097 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:42:42.574097 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:42:42.589562 [debug] [MainThread]: Command `dbt debug` succeeded at 18:42:42.589562 after 3.21 seconds
+[0m18:42:42.589562 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:42:42.589562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245742956A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245722F7C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245751E3BF0>]}
+[0m18:42:42.589562 [debug] [MainThread]: Flushing usage events
+[0m18:42:43.144008 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:43:36.846804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C502F9EAE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5026BF5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57FD6B110>]}
+
+
+============================== 18:43:36.846804 | 56b30f0c-4229-4e48-8d60-ab206786e1d8 ==============================
+[0m18:43:36.846804 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:43:36.846804 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:43:42.612087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5061905C0>]}
+[0m18:43:42.693602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57FE84500>]}
+[0m18:43:42.693602 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:43:43.041309 [debug] [MainThread]: checksum: 6d613410872952ba2511098508fa51a7535d4908bf1f03081061943adfdf3803, vars: {}, profile: tf_docker_dbt, target: dev, version: 1.12.5
+[0m18:43:43.053771 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:43:43.053771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C505F63B30>]}
+[0m18:43:45.052378 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tf_docker_dbt.marts
+[0m18:43:45.053377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C504D704A0>]}
+[0m18:43:45.180387 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m18:43:45.209504 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m18:43:45.537826 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m18:43:45.655164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5077E52B0>]}
+[0m18:43:45.655612 [info ] [MainThread]: Found 2 models, 1 source, 505 macros
+[0m18:43:45.656074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5077F2A80>]}
+[0m18:43:45.665867 [info ] [MainThread]: 
+[0m18:43:45.665867 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:43:45.674320 [info ] [MainThread]: 
+[0m18:43:45.674320 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m18:43:45.682646 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog'
+[0m18:43:45.682646 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:43:46.669254 [debug] [ThreadPool]: On list_awsdatacatalog: No close available on handle
+[0m18:43:46.669254 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog_analytics_dev'
+[0m18:43:46.669254 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:43:47.539151 [debug] [ThreadPool]: On list_awsdatacatalog_analytics_dev: No close available on handle
+[0m18:43:47.539151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5066B0770>]}
+[0m18:43:47.621458 [debug] [Thread-1 (]: Began running node model.tf_docker_dbt.example
+[0m18:43:47.621458 [debug] [Thread-2 (]: Began running node model.tf_docker_dbt.stg_customers
+[0m18:43:47.621458 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics_dev.example .............................. [RUN]
+[0m18:43:47.621458 [debug] [Thread-1 (]: Acquiring new athena connection 'model.tf_docker_dbt.example'
+[0m18:43:47.621458 [debug] [Thread-1 (]: Began compiling node model.tf_docker_dbt.example
+[0m18:43:47.637234 [debug] [Thread-1 (]: Writing injected SQL for node "model.tf_docker_dbt.example"
+[0m18:43:47.621458 [info ] [Thread-2 (]: 2 of 2 START sql view model analytics_dev.stg_customers ........................ [RUN]
+[0m18:43:47.637234 [debug] [Thread-2 (]: Acquiring new athena connection 'model.tf_docker_dbt.stg_customers'
+[0m18:43:47.637234 [debug] [Thread-2 (]: Began compiling node model.tf_docker_dbt.stg_customers
+[0m18:43:47.637234 [debug] [Thread-2 (]: Writing injected SQL for node "model.tf_docker_dbt.stg_customers"
+[0m18:43:47.652036 [debug] [Thread-1 (]: Began executing node model.tf_docker_dbt.example
+[0m18:43:47.684974 [debug] [Thread-2 (]: Began executing node model.tf_docker_dbt.stg_customers
+[0m18:43:47.684974 [debug] [Thread-1 (]: Writing runtime sql for node "model.tf_docker_dbt.example"
+[0m18:43:47.684974 [debug] [Thread-2 (]: Writing runtime sql for node "model.tf_docker_dbt.stg_customers"
+[0m18:43:47.717079 [debug] [Thread-1 (]: Using athena connection "model.tf_docker_dbt.example"
+[0m18:43:47.717079 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+
+[0m18:43:47.717079 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:43:47.717079 [debug] [Thread-2 (]: Using athena connection "model.tf_docker_dbt.stg_customers"
+[0m18:43:47.717079 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."customers"
+
+[0m18:43:47.717079 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:43:47.943803 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."customers"
+[0m18:43:47.943803 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+[0m18:43:48.227406 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query 9f116c8a-a8e6-42c3-b50d-876723cf7bca started
+[0m18:43:48.227406 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 7437ce46-6361-4fd7-acbe-357571c2ad46 started
+[0m18:43:48.288764 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query 9f116c8a-a8e6-42c3-b50d-876723cf7bca has state QUEUED
+[0m18:43:48.291302 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 7437ce46-6361-4fd7-acbe-357571c2ad46 has state QUEUED
+[0m18:43:49.641061 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 7437ce46-6361-4fd7-acbe-357571c2ad46 has state SUCCEEDED
+[0m18:43:49.641061 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query 9f116c8a-a8e6-42c3-b50d-876723cf7bca has state FAILED
+[0m18:43:49.641061 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Error running SQL: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."customers"
+
+[0m18:43:49.641061 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: No close available on handle
+[0m18:43:49.735906 [debug] [Thread-1 (]: SQL status: OK -1 in 2.028 seconds
+[0m18:43:49.812894 [debug] [Thread-2 (]: Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Runtime Error
+    line 13:6: Table 'awsdatacatalog.analytics_dev.customers' does not exist
+[0m18:43:49.828515 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5066F0260>]}
+[0m18:43:49.828515 [error] [Thread-2 (]: 2 of 2 ERROR creating sql view model analytics_dev.stg_customers ............... [[31mERROR[0m in 2.18s]
+[0m18:43:49.828515 [debug] [Thread-2 (]: Finished running node model.tf_docker_dbt.stg_customers
+[0m18:43:49.828515 [debug] [Thread-7 (]: Marking all children of 'model.tf_docker_dbt.stg_customers' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Runtime Error
+    line 13:6: Table 'awsdatacatalog.analytics_dev.customers' does not exist.
+[0m18:43:50.103489 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Total table versions: ['0']
+[0m18:43:50.103489 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m18:43:50.118952 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: No close available on handle
+[0m18:43:50.118952 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56b30f0c-4229-4e48-8d60-ab206786e1d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C505618110>]}
+[0m18:43:50.118952 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics_dev.example ......................... [[32mOK -1[0m in 2.50s]
+[0m18:43:50.118952 [debug] [Thread-1 (]: Finished running node model.tf_docker_dbt.example
+[0m18:43:50.118952 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:43:50.118952 [debug] [MainThread]: Connection 'list_awsdatacatalog' was properly closed.
+[0m18:43:50.118952 [debug] [MainThread]: Connection 'list_awsdatacatalog_analytics_dev' was properly closed.
+[0m18:43:50.118952 [debug] [MainThread]: Connection 'model.tf_docker_dbt.example' was properly closed.
+[0m18:43:50.118952 [debug] [MainThread]: Connection 'model.tf_docker_dbt.stg_customers' was properly closed.
+[0m18:43:50.118952 [info ] [MainThread]: 
+[0m18:43:50.118952 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 4.44 seconds (4.44s).
+[0m18:43:50.118952 [debug] [MainThread]: Command end result
+[0m18:43:50.332966 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m18:43:50.332966 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m18:43:50.336768 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m18:43:50.346968 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\run_results.json
+[0m18:43:50.350705 [info ] [MainThread]: 
+[0m18:43:50.350705 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:43:50.350705 [info ] [MainThread]: 
+[0m18:43:50.350705 [error] [MainThread]: [[31mERROR[0m]: in model stg_customers (models\staging\stg_customers.sql)
+[0m18:43:50.350705 [error] [MainThread]:   Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Runtime Error
+    line 13:6: Table 'awsdatacatalog.analytics_dev.customers' does not exist
+[0m18:43:50.350705 [info ] [MainThread]: 
+[0m18:43:50.350705 [info ] [MainThread]:   compiled code at target\compiled\tf_docker_dbt\models\staging\stg_customers.sql
+[0m18:43:50.350705 [info ] [MainThread]: 
+[0m18:43:50.350705 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m18:43:50.350705 [debug] [MainThread]: Command `dbt run` failed at 18:43:50.350705 after 13.66 seconds
+[0m18:43:50.350705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C504B39640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C502AB1F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C505074FE0>]}
+[0m18:43:50.350705 [debug] [MainThread]: Flushing usage events
+[0m18:43:50.959041 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:45:35.805989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117AEC39250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117AF8781A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117B26411F0>]}
+
+
+============================== 18:45:35.805989 | f56832b1-801b-4e35-b6dd-018d12ac833a ==============================
+[0m18:45:35.805989 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:45:35.805989 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:45:36.803245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f56832b1-801b-4e35-b6dd-018d12ac833a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117B2E0E5A0>]}
+[0m18:45:36.890335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f56832b1-801b-4e35-b6dd-018d12ac833a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117B5CC56D0>]}
+[0m18:45:36.890335 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:45:37.223995 [debug] [MainThread]: checksum: 6d613410872952ba2511098508fa51a7535d4908bf1f03081061943adfdf3803, vars: {}, profile: tf_docker_dbt, target: dev, version: 1.12.5
+[0m18:45:37.550648 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:45:37.550648 [debug] [MainThread]: Partial parsing: updated file: tf_docker_dbt://models\staging\stg_customers.sql
+[0m18:45:37.815293 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.tf_docker_dbt.stg_customers' (models\staging\stg_customers.sql) depends on a source named 'raw_data.raw_customers' which was not found
+[0m18:45:37.815293 [debug] [MainThread]: Command `dbt run` failed at 18:45:37.815293 after 2.18 seconds
+[0m18:45:37.815293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117B47C13A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117B60BD670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000117B4958800>]}
+[0m18:45:37.815293 [debug] [MainThread]: Flushing usage events
+[0m18:45:38.398164 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:49:15.940990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FEB9F61B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FEB9F7AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FEB9F43E0>]}
+
+
+============================== 18:49:15.944525 | 901ff02c-dc8d-4a79-9b7a-0ae20f60b3e0 ==============================
+[0m18:49:15.944525 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:49:15.944525 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:49:15.970305 [info ] [MainThread]: dbt version: 1.12.5
+[0m18:49:15.970305 [info ] [MainThread]: python version: 3.12.13
+[0m18:49:15.970305 [info ] [MainThread]: python path: D:\Users\thoma\miniconda3\envs\py312\python.exe
+[0m18:49:15.970305 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:49:16.719930 [info ] [MainThread]: Using profiles dir at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy
+[0m18:49:16.719930 [info ] [MainThread]: Using profiles.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\profiles.yml
+[0m18:49:16.719930 [info ] [MainThread]: Using dbt_project.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\dbt_project.yml
+[0m18:49:16.719930 [info ] [MainThread]: adapter type: athena
+[0m18:49:16.719930 [info ] [MainThread]: adapter version: 1.11.1
+[0m18:49:16.860524 [info ] [MainThread]: Configuration:
+[0m18:49:16.860524 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:49:16.860524 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:49:16.860524 [info ] [MainThread]: Required dependencies:
+[0m18:49:16.860524 [debug] [MainThread]: Executing "git --help"
+[0m18:49:16.906225 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:49:16.906225 [debug] [MainThread]: STDERR: "b''"
+[0m18:49:16.906225 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:49:16.906225 [info ] [MainThread]: Connection:
+[0m18:49:16.906225 [info ] [MainThread]:   assume_role_arn: None
+[0m18:49:16.906225 [info ] [MainThread]:   assume_role_duration_seconds: 3600
+[0m18:49:16.906225 [info ] [MainThread]:   assume_role_external_id: None
+[0m18:49:16.906225 [info ] [MainThread]:   assume_role_session_name: dbt-athena
+[0m18:49:16.906225 [info ] [MainThread]:   aws_access_key_id: None
+[0m18:49:16.906225 [info ] [MainThread]:   aws_profile_name: None
+[0m18:49:16.906225 [info ] [MainThread]:   connection_manager: api
+[0m18:49:16.906225 [info ] [MainThread]:   database: awsdatacatalog
+[0m18:49:16.906225 [info ] [MainThread]:   debug_query_state: False
+[0m18:49:16.906225 [info ] [MainThread]:   endpoint_url: None
+[0m18:49:16.906225 [info ] [MainThread]:   lf_tags_database: None
+[0m18:49:16.906225 [info ] [MainThread]:   num_boto3_retries: None
+[0m18:49:16.906225 [info ] [MainThread]:   num_iceberg_retries: 3
+[0m18:49:16.906225 [info ] [MainThread]:   num_retries: 5
+[0m18:49:16.906225 [info ] [MainThread]:   poll_interval: 1.0
+[0m18:49:16.906225 [info ] [MainThread]:   region_name: eu-west-3
+[0m18:49:16.906225 [info ] [MainThread]:   s3_data_dir: s3://tf-docker-dbt-marts-data/dbt_marts/
+[0m18:49:16.906225 [info ] [MainThread]:   s3_data_naming: schema_table
+[0m18:49:16.906225 [info ] [MainThread]:   s3_staging_dir: s3://tf-docker-dbt-marts-data/athena_query_results/
+[0m18:49:16.906225 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m18:49:16.906225 [info ] [MainThread]:   schema: analytics_dev
+[0m18:49:16.906225 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m18:49:16.906225 [info ] [MainThread]:   skip_workgroup_check: False
+[0m18:49:16.906225 [info ] [MainThread]:   spark_work_group: None
+[0m18:49:16.906225 [info ] [MainThread]:   work_group: None
+[0m18:49:16.906225 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:49:17.221073 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m18:49:17.221073 [debug] [MainThread]: Using athena connection "debug"
+[0m18:49:17.221073 [debug] [MainThread]: On debug: select 1 as id
+[0m18:49:17.221073 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:49:17.392581 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Execute: select 1 as id
+[0m18:49:17.796584 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query 7b46dc26-33a7-4a45-b2a3-f2f5fb7fac35 started
+[0m18:49:17.874533 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query 7b46dc26-33a7-4a45-b2a3-f2f5fb7fac35 has state RUNNING
+[0m18:49:18.922927 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query 7b46dc26-33a7-4a45-b2a3-f2f5fb7fac35 has state SUCCEEDED
+[0m18:49:19.034888 [debug] [MainThread]: SQL status: OK 0 in 1.809 seconds
+[0m18:49:19.034888 [debug] [MainThread]: On debug: No close available on handle
+[0m18:49:19.034888 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:49:19.034888 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:49:19.034888 [debug] [MainThread]: Command `dbt debug` succeeded at 18:49:19.034888 after 3.26 seconds
+[0m18:49:19.034888 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:49:19.034888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FEDC93FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FEF19C1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FEDB76300>]}
+[0m18:49:19.034888 [debug] [MainThread]: Flushing usage events
+[0m18:49:19.613714 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:49:25.207575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC61A48D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC63F1BE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC63F1A960>]}
+
+
+============================== 18:49:25.211867 | a69eddd5-6af0-47e2-9274-a39e6668d08d ==============================
+[0m18:49:25.211867 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:49:25.211867 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:49:26.136070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a69eddd5-6af0-47e2-9274-a39e6668d08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC66444EC0>]}
+[0m18:49:26.214177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a69eddd5-6af0-47e2-9274-a39e6668d08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC6618ADB0>]}
+[0m18:49:26.231296 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:49:26.540405 [debug] [MainThread]: checksum: 6d613410872952ba2511098508fa51a7535d4908bf1f03081061943adfdf3803, vars: {}, profile: tf_docker_dbt, target: dev, version: 1.12.5
+[0m18:49:26.761660 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:49:26.761660 [debug] [MainThread]: Partial parsing: updated file: tf_docker_dbt://models\sources.yml
+[0m18:49:27.172527 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.tf_docker_dbt.stg_customers' (models\staging\stg_customers.sql) depends on a source named 'raw_data.customers' which was not found
+[0m18:49:27.172527 [debug] [MainThread]: Command `dbt run` failed at 18:49:27.172527 after 2.12 seconds
+[0m18:49:27.172527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC64688DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC67691AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC6763C3B0>]}
+[0m18:49:27.172527 [debug] [MainThread]: Flushing usage events
+[0m18:49:27.670650 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:50:53.598547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249D4CB8C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249D9338860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249D4383F50>]}
+
+
+============================== 18:50:53.598547 | 36728217-82e4-460f-a960-c06d646cf30c ==============================
+[0m18:50:53.598547 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:50:53.598547 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:50:54.541176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DA7E0A40>]}
+[0m18:50:54.634901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DA48BEF0>]}
+[0m18:50:54.634901 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:50:54.959193 [debug] [MainThread]: checksum: 6d613410872952ba2511098508fa51a7535d4908bf1f03081061943adfdf3803, vars: {}, profile: tf_docker_dbt, target: dev, version: 1.12.5
+[0m18:50:55.152563 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m18:50:55.152563 [debug] [MainThread]: Partial parsing: updated file: tf_docker_dbt://models\sources.yml
+[0m18:50:55.152563 [debug] [MainThread]: Partial parsing: updated file: tf_docker_dbt://models\staging\stg_customers.sql
+[0m18:50:55.649517 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tf_docker_dbt.marts
+[0m18:50:55.649517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DA6C2540>]}
+[0m18:50:55.777000 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m18:50:55.780754 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m18:50:55.812525 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m18:50:55.826289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DC0141A0>]}
+[0m18:50:55.827287 [info ] [MainThread]: Found 2 models, 1 source, 505 macros
+[0m18:50:55.827287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DBD85CA0>]}
+[0m18:50:55.827287 [info ] [MainThread]: 
+[0m18:50:55.827287 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:50:55.827287 [info ] [MainThread]: 
+[0m18:50:55.827287 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m18:50:55.827287 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog'
+[0m18:50:55.827287 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:50:56.561604 [debug] [ThreadPool]: On list_awsdatacatalog: No close available on handle
+[0m18:50:56.561604 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog_analytics_dev'
+[0m18:50:56.561604 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:50:57.221099 [debug] [ThreadPool]: On list_awsdatacatalog_analytics_dev: No close available on handle
+[0m18:50:57.236684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DBF10EF0>]}
+[0m18:50:57.236684 [debug] [Thread-1 (]: Began running node model.tf_docker_dbt.example
+[0m18:50:57.236684 [debug] [Thread-2 (]: Began running node model.tf_docker_dbt.stg_customers
+[0m18:50:57.236684 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics_dev.example .............................. [RUN]
+[0m18:50:57.236684 [debug] [Thread-1 (]: Acquiring new athena connection 'model.tf_docker_dbt.example'
+[0m18:50:57.236684 [debug] [Thread-1 (]: Began compiling node model.tf_docker_dbt.example
+[0m18:50:57.236684 [debug] [Thread-1 (]: Writing injected SQL for node "model.tf_docker_dbt.example"
+[0m18:50:57.236684 [info ] [Thread-2 (]: 2 of 2 START sql view model analytics_dev.stg_customers ........................ [RUN]
+[0m18:50:57.236684 [debug] [Thread-2 (]: Acquiring new athena connection 'model.tf_docker_dbt.stg_customers'
+[0m18:50:57.253396 [debug] [Thread-2 (]: Began compiling node model.tf_docker_dbt.stg_customers
+[0m18:50:57.253396 [debug] [Thread-2 (]: Writing injected SQL for node "model.tf_docker_dbt.stg_customers"
+[0m18:50:57.253396 [debug] [Thread-1 (]: Began executing node model.tf_docker_dbt.example
+[0m18:50:57.291123 [debug] [Thread-2 (]: Began executing node model.tf_docker_dbt.stg_customers
+[0m18:50:57.291123 [debug] [Thread-1 (]: Writing runtime sql for node "model.tf_docker_dbt.example"
+[0m18:50:57.291123 [debug] [Thread-2 (]: Writing runtime sql for node "model.tf_docker_dbt.stg_customers"
+[0m18:50:57.300085 [debug] [Thread-1 (]: Using athena connection "model.tf_docker_dbt.example"
+[0m18:50:57.300430 [debug] [Thread-2 (]: Using athena connection "model.tf_docker_dbt.stg_customers"
+[0m18:50:57.301428 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+
+[0m18:50:57.301428 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."raw_customers"
+
+[0m18:50:57.301428 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:50:57.301428 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:50:57.557262 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+[0m18:50:57.572941 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."raw_customers"
+[0m18:50:57.807368 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query ec46219e-10b5-46c2-a8dc-c3ca387535bc started
+[0m18:50:57.807368 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 088f88b7-f340-4425-abf7-ef9e414ef5f2 started
+[0m18:50:57.841381 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query ec46219e-10b5-46c2-a8dc-c3ca387535bc has state QUEUED
+[0m18:50:57.872623 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 088f88b7-f340-4425-abf7-ef9e414ef5f2 has state QUEUED
+[0m18:50:58.910729 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query ec46219e-10b5-46c2-a8dc-c3ca387535bc has state SUCCEEDED
+[0m18:50:58.910729 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 088f88b7-f340-4425-abf7-ef9e414ef5f2 has state SUCCEEDED
+[0m18:50:59.013251 [debug] [Thread-2 (]: SQL status: OK -1 in 1.719 seconds
+[0m18:50:59.045475 [debug] [Thread-1 (]: SQL status: OK -1 in 1.756 seconds
+[0m18:50:59.339975 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Total table versions: ['0']
+[0m18:50:59.355438 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Total table versions: ['1', '0']
+[0m18:50:59.355438 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m18:50:59.355438 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: No close available on handle
+[0m18:50:59.355438 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m18:50:59.355438 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: No close available on handle
+[0m18:50:59.355438 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DDCED100>]}
+[0m18:50:59.371065 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36728217-82e4-460f-a960-c06d646cf30c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DDCEC4D0>]}
+[0m18:50:59.371065 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics_dev.example ......................... [[32mOK -1[0m in 2.12s]
+[0m18:50:59.371065 [debug] [Thread-1 (]: Finished running node model.tf_docker_dbt.example
+[0m18:50:59.371065 [info ] [Thread-2 (]: 2 of 2 OK created sql view model analytics_dev.stg_customers ................... [[32mOK -1[0m in 2.12s]
+[0m18:50:59.371065 [debug] [Thread-2 (]: Finished running node model.tf_docker_dbt.stg_customers
+[0m18:50:59.371065 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:50:59.371065 [debug] [MainThread]: Connection 'list_awsdatacatalog' was properly closed.
+[0m18:50:59.371065 [debug] [MainThread]: Connection 'list_awsdatacatalog_analytics_dev' was properly closed.
+[0m18:50:59.371065 [debug] [MainThread]: Connection 'model.tf_docker_dbt.example' was properly closed.
+[0m18:50:59.371065 [debug] [MainThread]: Connection 'model.tf_docker_dbt.stg_customers' was properly closed.
+[0m18:50:59.371065 [info ] [MainThread]: 
+[0m18:50:59.371065 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.54 seconds (3.54s).
+[0m18:50:59.371065 [debug] [MainThread]: Command end result
+[0m18:50:59.417893 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m18:50:59.433514 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m18:50:59.436502 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m18:50:59.439530 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\run_results.json
+[0m18:50:59.439530 [info ] [MainThread]: 
+[0m18:50:59.439530 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:50:59.439530 [info ] [MainThread]: 
+[0m18:50:59.439530 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m18:50:59.439530 [debug] [MainThread]: Command `dbt run` succeeded at 18:50:59.439530 after 6.00 seconds
+[0m18:50:59.439530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249D4CB8C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249DA827B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249D94614F0>]}
+[0m18:50:59.439530 [debug] [MainThread]: Flushing usage events
+[0m18:50:59.966148 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:59:34.619047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001952E025670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001952E025640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001952E025820>]}
+
+
+============================== 18:59:34.623209 | 3592320a-f105-430d-907f-109f7546720c ==============================
+[0m18:59:34.623209 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:59:34.623209 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:59:34.649837 [info ] [MainThread]: dbt version: 1.12.5
+[0m18:59:34.649837 [info ] [MainThread]: python version: 3.12.13
+[0m18:59:34.649837 [info ] [MainThread]: python path: D:\Users\thoma\miniconda3\envs\py312\python.exe
+[0m18:59:34.649837 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:59:35.422962 [info ] [MainThread]: Using profiles dir at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy
+[0m18:59:35.422962 [info ] [MainThread]: Using profiles.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\profiles.yml
+[0m18:59:35.422962 [info ] [MainThread]: Using dbt_project.yml file at D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\dbt_project.yml
+[0m18:59:35.422962 [info ] [MainThread]: adapter type: athena
+[0m18:59:35.422962 [info ] [MainThread]: adapter version: 1.11.1
+[0m18:59:35.589570 [info ] [MainThread]: Configuration:
+[0m18:59:35.589570 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:59:35.589570 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:59:35.604649 [info ] [MainThread]: Required dependencies:
+[0m18:59:35.605620 [debug] [MainThread]: Executing "git --help"
+[0m18:59:35.642696 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:59:35.642696 [debug] [MainThread]: STDERR: "b''"
+[0m18:59:35.642696 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:59:35.642696 [info ] [MainThread]: Connection:
+[0m18:59:35.644917 [info ] [MainThread]:   assume_role_arn: None
+[0m18:59:35.644917 [info ] [MainThread]:   assume_role_duration_seconds: 3600
+[0m18:59:35.646051 [info ] [MainThread]:   assume_role_external_id: None
+[0m18:59:35.646051 [info ] [MainThread]:   assume_role_session_name: dbt-athena
+[0m18:59:35.646051 [info ] [MainThread]:   aws_access_key_id: None
+[0m18:59:35.646051 [info ] [MainThread]:   aws_profile_name: None
+[0m18:59:35.648398 [info ] [MainThread]:   connection_manager: api
+[0m18:59:35.648398 [info ] [MainThread]:   database: awsdatacatalog
+[0m18:59:35.648398 [info ] [MainThread]:   debug_query_state: False
+[0m18:59:35.648398 [info ] [MainThread]:   endpoint_url: None
+[0m18:59:35.648398 [info ] [MainThread]:   lf_tags_database: None
+[0m18:59:35.648398 [info ] [MainThread]:   num_boto3_retries: None
+[0m18:59:35.648398 [info ] [MainThread]:   num_iceberg_retries: 3
+[0m18:59:35.648398 [info ] [MainThread]:   num_retries: 5
+[0m18:59:35.648398 [info ] [MainThread]:   poll_interval: 1.0
+[0m18:59:35.648398 [info ] [MainThread]:   region_name: eu-west-3
+[0m18:59:35.648398 [info ] [MainThread]:   s3_data_dir: s3://tf-docker-dbt-marts-data/dbt_marts/
+[0m18:59:35.654679 [info ] [MainThread]:   s3_data_naming: schema_table
+[0m18:59:35.655333 [info ] [MainThread]:   s3_staging_dir: s3://tf-docker-dbt-marts-data/athena_query_results/
+[0m18:59:35.655679 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m18:59:35.657643 [info ] [MainThread]:   schema: analytics_dev
+[0m18:59:35.657643 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m18:59:35.657643 [info ] [MainThread]:   skip_workgroup_check: False
+[0m18:59:35.657643 [info ] [MainThread]:   spark_work_group: None
+[0m18:59:35.657643 [info ] [MainThread]:   work_group: None
+[0m18:59:35.657643 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:59:35.972980 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m18:59:35.972980 [debug] [MainThread]: Using athena connection "debug"
+[0m18:59:35.972980 [debug] [MainThread]: On debug: select 1 as id
+[0m18:59:35.972980 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:59:36.147195 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Execute: select 1 as id
+[0m18:59:36.630494 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query d4803986-7723-4897-bf75-624f415325bd started
+[0m18:59:36.722342 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query d4803986-7723-4897-bf75-624f415325bd has state QUEUED
+[0m18:59:37.788050 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query d4803986-7723-4897-bf75-624f415325bd has state SUCCEEDED
+[0m18:59:37.906412 [debug] [MainThread]: SQL status: OK 0 in 1.934 seconds
+[0m18:59:37.906412 [debug] [MainThread]: On debug: No close available on handle
+[0m18:59:37.906412 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:59:37.906412 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:59:37.906412 [debug] [MainThread]: Command `dbt debug` succeeded at 18:59:37.906412 after 3.46 seconds
+[0m18:59:37.906412 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:59:37.906412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019531B78050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019531B79DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019531C13D40>]}
+[0m18:59:37.906412 [debug] [MainThread]: Flushing usage events
+[0m18:59:38.439853 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:59:46.331670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2AB5A4B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A29D1F740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2879F050>]}
+
+
+============================== 18:59:46.331670 | 758a255b-9fd8-45eb-81d5-3bc47e06b584 ==============================
+[0m18:59:46.331670 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:59:46.337617 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m18:59:47.322283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2CE78680>]}
+[0m18:59:47.405788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2CDE2930>]}
+[0m18:59:47.420870 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m18:59:47.806088 [debug] [MainThread]: checksum: 6d613410872952ba2511098508fa51a7535d4908bf1f03081061943adfdf3803, vars: {}, profile: tf_docker_dbt, target: dev, version: 1.12.5
+[0m18:59:48.022483 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m18:59:48.022483 [debug] [MainThread]: Partial parsing: added file: tf_docker_dbt://models\marts\dim_customers.sql
+[0m18:59:48.396729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2F0E1FD0>]}
+[0m18:59:48.539976 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m18:59:48.539976 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m18:59:48.572760 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m18:59:48.590134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2F137350>]}
+[0m18:59:48.590421 [info ] [MainThread]: Found 3 models, 1 source, 505 macros
+[0m18:59:48.590421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2F152D50>]}
+[0m18:59:48.590421 [info ] [MainThread]: 
+[0m18:59:48.590421 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:59:48.590421 [info ] [MainThread]: 
+[0m18:59:48.590421 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m18:59:48.590421 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog'
+[0m18:59:48.590421 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:59:49.258296 [debug] [ThreadPool]: On list_awsdatacatalog: No close available on handle
+[0m18:59:49.258296 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog_analytics_dev'
+[0m18:59:49.258296 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:59:49.972607 [debug] [ThreadPool]: On list_awsdatacatalog_analytics_dev: No close available on handle
+[0m18:59:49.972607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2DAE1A60>]}
+[0m18:59:49.972607 [debug] [Thread-1 (]: Began running node model.tf_docker_dbt.example
+[0m18:59:49.972607 [debug] [Thread-2 (]: Began running node model.tf_docker_dbt.stg_customers
+[0m18:59:49.972607 [info ] [Thread-1 (]: 1 of 3 START sql view model analytics_dev.example .............................. [RUN]
+[0m18:59:49.972607 [debug] [Thread-1 (]: Acquiring new athena connection 'model.tf_docker_dbt.example'
+[0m18:59:49.972607 [debug] [Thread-1 (]: Began compiling node model.tf_docker_dbt.example
+[0m18:59:49.972607 [info ] [Thread-2 (]: 2 of 3 START sql view model analytics_dev.stg_customers ........................ [RUN]
+[0m18:59:49.987456 [debug] [Thread-1 (]: Writing injected SQL for node "model.tf_docker_dbt.example"
+[0m18:59:49.988411 [debug] [Thread-2 (]: Acquiring new athena connection 'model.tf_docker_dbt.stg_customers'
+[0m18:59:49.989606 [debug] [Thread-2 (]: Began compiling node model.tf_docker_dbt.stg_customers
+[0m18:59:49.990450 [debug] [Thread-2 (]: Writing injected SQL for node "model.tf_docker_dbt.stg_customers"
+[0m18:59:49.992689 [debug] [Thread-1 (]: Began executing node model.tf_docker_dbt.example
+[0m18:59:50.022847 [debug] [Thread-1 (]: Writing runtime sql for node "model.tf_docker_dbt.example"
+[0m18:59:50.022847 [debug] [Thread-2 (]: Began executing node model.tf_docker_dbt.stg_customers
+[0m18:59:50.022847 [debug] [Thread-2 (]: Writing runtime sql for node "model.tf_docker_dbt.stg_customers"
+[0m18:59:50.022847 [debug] [Thread-1 (]: Using athena connection "model.tf_docker_dbt.example"
+[0m18:59:50.027196 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+
+[0m18:59:50.027196 [debug] [Thread-2 (]: Using athena connection "model.tf_docker_dbt.stg_customers"
+[0m18:59:50.027196 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:59:50.027196 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."raw_customers"
+
+[0m18:59:50.039456 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:59:50.272600 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+[0m18:59:50.279733 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."raw_customers"
+[0m18:59:50.471921 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query 149e8e81-efa9-45e9-96bb-dcdd242abeb3 started
+[0m18:59:50.472951 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 11de650d-bd81-465f-af70-cd8cec413ddd started
+[0m18:59:50.522986 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query 149e8e81-efa9-45e9-96bb-dcdd242abeb3 has state QUEUED
+[0m18:59:50.522986 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 11de650d-bd81-465f-af70-cd8cec413ddd has state QUEUED
+[0m18:59:51.739279 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query 149e8e81-efa9-45e9-96bb-dcdd242abeb3 has state SUCCEEDED
+[0m18:59:51.739279 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 11de650d-bd81-465f-af70-cd8cec413ddd has state SUCCEEDED
+[0m18:59:51.839487 [debug] [Thread-2 (]: SQL status: OK -1 in 1.803 seconds
+[0m18:59:51.839487 [debug] [Thread-1 (]: SQL status: OK -1 in 1.815 seconds
+[0m18:59:52.172620 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Total table versions: ['1', '0']
+[0m18:59:52.172687 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m18:59:52.172687 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: No close available on handle
+[0m18:59:52.172687 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A3143D850>]}
+[0m18:59:52.172687 [info ] [Thread-2 (]: 2 of 3 OK created sql view model analytics_dev.stg_customers ................... [[32mOK -1[0m in 2.18s]
+[0m18:59:52.172687 [debug] [Thread-2 (]: Finished running node model.tf_docker_dbt.stg_customers
+[0m18:59:52.172687 [debug] [Thread-4 (]: Began running node model.tf_docker_dbt.dim_customers
+[0m18:59:52.187351 [info ] [Thread-4 (]: 3 of 3 START sql table model analytics_dev.dim_customers ....................... [RUN]
+[0m18:59:52.188329 [debug] [Thread-4 (]: Acquiring new athena connection 'model.tf_docker_dbt.dim_customers'
+[0m18:59:52.188329 [debug] [Thread-4 (]: Began compiling node model.tf_docker_dbt.dim_customers
+[0m18:59:52.189455 [debug] [Thread-4 (]: Writing injected SQL for node "model.tf_docker_dbt.dim_customers"
+[0m18:59:52.189455 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Total table versions: ['2', '1', '0']
+[0m18:59:52.189455 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m18:59:52.189455 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: No close available on handle
+[0m18:59:52.189455 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A3321BF50>]}
+[0m18:59:52.189455 [info ] [Thread-1 (]: 1 of 3 OK created sql view model analytics_dev.example ......................... [[32mOK -1[0m in 2.22s]
+[0m18:59:52.189455 [debug] [Thread-1 (]: Finished running node model.tf_docker_dbt.example
+[0m18:59:52.296121 [debug] [Thread-4 (]: Began executing node model.tf_docker_dbt.dim_customers
+[0m18:59:52.372131 [debug] [Thread-4 (]: Skip partitioning: False
+[0m18:59:52.372131 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:59:52.922579 [debug] [Thread-4 (]: dbt.adapters.athena.constants adapter: S3 path does not exist
+[0m18:59:52.922579 [debug] [Thread-4 (]: On model.tf_docker_dbt.dim_customers: No close available on handle
+[0m18:59:52.955834 [debug] [Thread-4 (]: Compilation Error in model dim_customers (models\marts\dim_customers.sql)
+  You need to have an unique table location when creating Iceberg table since we use the RENAME feature
+            to have near-zero downtime.
+  
+  > in macro athena__create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro safe_create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro materialization_table_athena (macros\materializations\models\table\table.sql)
+  > called by model dim_customers (models\marts\dim_customers.sql)
+[0m18:59:52.955834 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '758a255b-9fd8-45eb-81d5-3bc47e06b584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2C6A8410>]}
+[0m18:59:52.955834 [error] [Thread-4 (]: 3 of 3 ERROR creating sql table model analytics_dev.dim_customers .............. [[31mERROR[0m in 0.77s]
+[0m18:59:52.955834 [debug] [Thread-4 (]: Finished running node model.tf_docker_dbt.dim_customers
+[0m18:59:52.955834 [debug] [Thread-7 (]: Marking all children of 'model.tf_docker_dbt.dim_customers' to be skipped because of status 'error'.  Reason: Compilation Error in model dim_customers (models\marts\dim_customers.sql)
+  You need to have an unique table location when creating Iceberg table since we use the RENAME feature
+            to have near-zero downtime.
+  
+  > in macro athena__create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro safe_create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro materialization_table_athena (macros\materializations\models\table\table.sql)
+  > called by model dim_customers (models\marts\dim_customers.sql).
+[0m18:59:52.955834 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:59:52.955834 [debug] [MainThread]: Connection 'list_awsdatacatalog' was properly closed.
+[0m18:59:52.955834 [debug] [MainThread]: Connection 'list_awsdatacatalog_analytics_dev' was properly closed.
+[0m18:59:52.955834 [debug] [MainThread]: Connection 'model.tf_docker_dbt.example' was properly closed.
+[0m18:59:52.955834 [debug] [MainThread]: Connection 'model.tf_docker_dbt.stg_customers' was properly closed.
+[0m18:59:52.955834 [debug] [MainThread]: Connection 'model.tf_docker_dbt.dim_customers' was properly closed.
+[0m18:59:52.955834 [info ] [MainThread]: 
+[0m18:59:52.970812 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 4.37 seconds (4.37s).
+[0m18:59:52.973155 [debug] [MainThread]: Command end result
+[0m18:59:53.022588 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m18:59:53.022588 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m18:59:53.032083 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m18:59:53.041156 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\run_results.json
+[0m18:59:53.041156 [info ] [MainThread]: 
+[0m18:59:53.041156 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:59:53.041156 [info ] [MainThread]: 
+[0m18:59:53.041156 [error] [MainThread]: [[31mERROR[0m]: in model dim_customers (models\marts\dim_customers.sql)
+[0m18:59:53.041156 [error] [MainThread]:   Compilation Error in model dim_customers (models\marts\dim_customers.sql)
+  You need to have an unique table location when creating Iceberg table since we use the RENAME feature
+            to have near-zero downtime.
+  
+  > in macro athena__create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro safe_create_table_as (macros\materializations\models\table\create_table_as.sql)
+  > called by macro materialization_table_athena (macros\materializations\models\table\table.sql)
+  > called by model dim_customers (models\marts\dim_customers.sql)
+[0m18:59:53.047197 [info ] [MainThread]: 
+[0m18:59:53.047197 [info ] [MainThread]:   compiled code at target\compiled\tf_docker_dbt\models\marts\dim_customers.sql
+[0m18:59:53.047197 [info ] [MainThread]: 
+[0m18:59:53.047197 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m18:59:53.047197 [debug] [MainThread]: Command `dbt run` failed at 18:59:53.047197 after 6.88 seconds
+[0m18:59:53.047197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2F02AF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A2D93CC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A29C955B0>]}
+[0m18:59:53.047197 [debug] [MainThread]: Flushing usage events
+[0m18:59:53.513471 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:01:52.080547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996A3656D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019967EB1040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199687BBEC0>]}
+
+
+============================== 19:01:52.085893 | c26e7bbc-d581-45c7-b362-88a56665e466 ==============================
+[0m19:01:52.085893 [info ] [MainThread]: Running with dbt=1.12.5
+[0m19:01:52.085893 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --full-refresh', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Users\\thoma\\Documents\\Vibe Code\\AWS-TF-Docker-DBT\\deploy\\logs'}
+[0m19:01:53.066966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996D9C4B00>]}
+[0m19:01:53.150314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996D239610>]}
+[0m19:01:53.150314 [info ] [MainThread]: Registered adapter: athena=1.11.1
+[0m19:01:53.483675 [debug] [MainThread]: checksum: 6d613410872952ba2511098508fa51a7535d4908bf1f03081061943adfdf3803, vars: {}, profile: tf_docker_dbt, target: dev, version: 1.12.5
+[0m19:01:53.600368 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m19:01:53.615726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996DD83080>]}
+[0m19:01:55.450439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996DC64AA0>]}
+[0m19:01:55.590355 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m19:01:55.593640 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m19:01:55.617830 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m19:01:55.640257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996F0BEE40>]}
+[0m19:01:55.640419 [info ] [MainThread]: Found 3 models, 1 source, 505 macros
+[0m19:01:55.640419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996F019E80>]}
+[0m19:01:55.640419 [info ] [MainThread]: 
+[0m19:01:55.640419 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:01:55.640419 [info ] [MainThread]: 
+[0m19:01:55.640419 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m19:01:55.650860 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog'
+[0m19:01:55.650860 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:01:56.417697 [debug] [ThreadPool]: On list_awsdatacatalog: No close available on handle
+[0m19:01:56.417697 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog_analytics_dev'
+[0m19:01:56.417697 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:01:57.116879 [debug] [ThreadPool]: On list_awsdatacatalog_analytics_dev: No close available on handle
+[0m19:01:57.116879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019968778EF0>]}
+[0m19:01:57.116879 [debug] [Thread-1 (]: Began running node model.tf_docker_dbt.example
+[0m19:01:57.116879 [debug] [Thread-2 (]: Began running node model.tf_docker_dbt.stg_customers
+[0m19:01:57.116879 [info ] [Thread-1 (]: 1 of 3 START sql view model analytics_dev.example .............................. [RUN]
+[0m19:01:57.116879 [debug] [Thread-1 (]: Acquiring new athena connection 'model.tf_docker_dbt.example'
+[0m19:01:57.116879 [debug] [Thread-1 (]: Began compiling node model.tf_docker_dbt.example
+[0m19:01:57.116879 [info ] [Thread-2 (]: 2 of 3 START sql view model analytics_dev.stg_customers ........................ [RUN]
+[0m19:01:57.132187 [debug] [Thread-2 (]: Acquiring new athena connection 'model.tf_docker_dbt.stg_customers'
+[0m19:01:57.133189 [debug] [Thread-2 (]: Began compiling node model.tf_docker_dbt.stg_customers
+[0m19:01:57.133987 [debug] [Thread-2 (]: Writing injected SQL for node "model.tf_docker_dbt.stg_customers"
+[0m19:01:57.133987 [debug] [Thread-1 (]: Writing injected SQL for node "model.tf_docker_dbt.example"
+[0m19:01:57.137510 [debug] [Thread-2 (]: Began executing node model.tf_docker_dbt.stg_customers
+[0m19:01:57.149064 [debug] [Thread-1 (]: Began executing node model.tf_docker_dbt.example
+[0m19:01:57.167386 [debug] [Thread-1 (]: Writing runtime sql for node "model.tf_docker_dbt.example"
+[0m19:01:57.167386 [debug] [Thread-2 (]: Writing runtime sql for node "model.tf_docker_dbt.stg_customers"
+[0m19:01:57.178045 [debug] [Thread-2 (]: Using athena connection "model.tf_docker_dbt.stg_customers"
+[0m19:01:57.178288 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."raw_customers"
+
+[0m19:01:57.178288 [debug] [Thread-1 (]: Using athena connection "model.tf_docker_dbt.example"
+[0m19:01:57.179286 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:01:57.179286 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+
+[0m19:01:57.183491 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:01:57.421083 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.example"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."example"
+  as
+    -- Un modèle dbt est simplement un SELECT !
+-- dbt va exécuter ça et créer une table 'example' sur Athena/S3.
+SELECT 
+    1 AS id,
+    'Projet AWS dbt Docker' AS nom,
+    CURRENT_DATE AS date_creation
+[0m19:01:57.433699 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.stg_customers"} */
+create or replace view
+    "awsdatacatalog"."analytics_dev"."stg_customers"
+  as
+    -- models/staging/stg_customers.sql
+
+SELECT
+    id AS customer_id,
+    UPPER(first_name) AS first_name,
+    UPPER(last_name) AS last_name,
+    LOWER(email) AS email,
+    CAST(signup_date AS DATE) AS signup_date
+FROM "awsdatacatalog"."analytics_dev"."raw_customers"
+[0m19:01:57.667077 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query f6f41d40-c7f2-4ea9-bd8b-125e192601c0 started
+[0m19:01:57.683722 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query f45b875d-8ee2-42b6-a369-0cc9b6fc8b0f started
+[0m19:01:57.717228 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query f6f41d40-c7f2-4ea9-bd8b-125e192601c0 has state RUNNING
+[0m19:01:57.733864 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query f45b875d-8ee2-42b6-a369-0cc9b6fc8b0f has state QUEUED
+[0m19:01:58.783886 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Athena query f6f41d40-c7f2-4ea9-bd8b-125e192601c0 has state SUCCEEDED
+[0m19:01:58.783886 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query f45b875d-8ee2-42b6-a369-0cc9b6fc8b0f has state SUCCEEDED
+[0m19:01:58.883271 [debug] [Thread-1 (]: SQL status: OK -1 in 1.694 seconds
+[0m19:01:58.883874 [debug] [Thread-2 (]: SQL status: OK -1 in 1.706 seconds
+[0m19:01:59.366916 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Total table versions: ['2', '1', '0']
+[0m19:01:59.366916 [debug] [Thread-2 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m19:01:59.388988 [debug] [Thread-2 (]: On model.tf_docker_dbt.stg_customers: No close available on handle
+[0m19:01:59.388988 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Total table versions: ['3', '2', '1', '0']
+[0m19:01:59.388988 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m19:01:59.388988 [debug] [Thread-1 (]: On model.tf_docker_dbt.example: No close available on handle
+[0m19:01:59.388988 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996CDD82C0>]}
+[0m19:01:59.388988 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996C5FA6C0>]}
+[0m19:01:59.388988 [info ] [Thread-2 (]: 2 of 3 OK created sql view model analytics_dev.stg_customers ................... [[32mOK -1[0m in 2.26s]
+[0m19:01:59.399771 [debug] [Thread-2 (]: Finished running node model.tf_docker_dbt.stg_customers
+[0m19:01:59.398770 [info ] [Thread-1 (]: 1 of 3 OK created sql view model analytics_dev.example ......................... [[32mOK -1[0m in 2.27s]
+[0m19:01:59.400599 [debug] [Thread-1 (]: Finished running node model.tf_docker_dbt.example
+[0m19:01:59.400599 [debug] [Thread-1 (]: Began running node model.tf_docker_dbt.dim_customers
+[0m19:01:59.400599 [info ] [Thread-1 (]: 3 of 3 START sql table model analytics_dev.dim_customers ....................... [RUN]
+[0m19:01:59.400599 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.tf_docker_dbt.example, now model.tf_docker_dbt.dim_customers)
+[0m19:01:59.400599 [debug] [Thread-1 (]: Began compiling node model.tf_docker_dbt.dim_customers
+[0m19:01:59.400599 [debug] [Thread-1 (]: Writing injected SQL for node "model.tf_docker_dbt.dim_customers"
+[0m19:01:59.400599 [debug] [Thread-1 (]: Began executing node model.tf_docker_dbt.dim_customers
+[0m19:01:59.484113 [debug] [Thread-1 (]: Skip partitioning: False
+[0m19:01:59.498809 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:01:59.900215 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: S3 path does not exist
+[0m19:01:59.900215 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Running Athena query:
+-- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.dim_customers"} */
+create table "awsdatacatalog"."analytics_dev"."dim_customers"
+    with (
+      table_type='iceberg',
+      is_external=false,location='s3://tf-docker-dbt-marts-data/dbt_marts/dim_customers/c6816d0b-b40b-4649-8775-ffd0ae0fe620',
+      format='parquet'
+    )
+    as
+      -- models/marts/dim_customers.sql
+
+WITH stg_customers AS (
+    -- On pointe vers le modèle de Staging grâce à la fonction ref()
+    SELECT * FROM "awsdatacatalog"."analytics_dev"."stg_customers"
+)
+
+SELECT
+    customer_id,
+    first_name,
+    last_name,
+    email,
+    signup_date,
+    -- Règle métier appliquée dans la couche Marts
+    CASE 
+        WHEN signup_date >= DATE '2026-01-01' THEN 'Client Récent'
+        ELSE 'Client Ancien'
+    END AS customer_segment
+FROM stg_customers
+[0m19:01:59.900215 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.dim_customers"} */
+create table "awsdatacatalog"."analytics_dev"."dim_customers"
+    with (
+      table_type='iceberg',
+      is_external=false,location='s3://tf-docker-dbt-marts-data/dbt_marts/dim_customers/c6816d0b-b40b-4649-8775-ffd0ae0fe620',
+      format='parquet'
+    )
+    as
+      -- models/marts/dim_customers.sql
+
+WITH stg_customers AS (
+    -- On pointe vers le modèle de Staging grâce à la fonction ref()
+    SELECT * FROM "awsdatacatalog"."analytics_dev"."stg_customers"
+)
+
+SELECT
+    customer_id,
+    first_name,
+    last_name,
+    email,
+    signup_date,
+    -- Règle métier appliquée dans la couche Marts
+    CASE 
+        WHEN signup_date >= DATE '2026-01-01' THEN 'Client Récent'
+        ELSE 'Client Ancien'
+    END AS customer_segment
+FROM stg_customers
+[0m19:02:00.116961 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 5f02a2f2-88a9-40c7-9499-6394f04efbb1 started
+[0m19:02:00.167266 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 5f02a2f2-88a9-40c7-9499-6394f04efbb1 has state QUEUED
+[0m19:02:01.233518 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 5f02a2f2-88a9-40c7-9499-6394f04efbb1 has state RUNNING
+[0m19:02:02.433454 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 5f02a2f2-88a9-40c7-9499-6394f04efbb1 has state RUNNING
+[0m19:02:03.516872 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 5f02a2f2-88a9-40c7-9499-6394f04efbb1 has state SUCCEEDED
+[0m19:02:03.600130 [debug] [Thread-1 (]: COMPILED CODE RESULT: {"rowcount":3,"data_scanned_in_bytes":178}
+[0m19:02:03.600130 [debug] [Thread-1 (]: Writing runtime sql for node "model.tf_docker_dbt.dim_customers"
+[0m19:02:03.600130 [debug] [Thread-1 (]: Using athena connection "model.tf_docker_dbt.dim_customers"
+[0m19:02:03.600130 [debug] [Thread-1 (]: On model.tf_docker_dbt.dim_customers: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.dim_customers"} */
+SELECT '{"rowcount":3,"data_scanned_in_bytes":178}';
+[0m19:02:03.600130 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Execute: -- /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "tf_docker_dbt", "target_name": "dev", "node_id": "model.tf_docker_dbt.dim_customers"} */
+SELECT '{"rowcount":3,"data_scanned_in_bytes":178}';
+[0m19:02:03.701110 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 7fa93caa-822b-4710-9035-64cec388d5ef started
+[0m19:02:03.766806 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 7fa93caa-822b-4710-9035-64cec388d5ef has state QUEUED
+[0m19:02:04.833731 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query 7fa93caa-822b-4710-9035-64cec388d5ef has state SUCCEEDED
+[0m19:02:04.833731 [debug] [Thread-1 (]: SQL status: OK 3 in 1.225 seconds
+[0m19:02:04.833731 [debug] [Thread-1 (]: On model.tf_docker_dbt.dim_customers: No close available on handle
+[0m19:02:04.833731 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c26e7bbc-d581-45c7-b362-88a56665e466', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019970FB4D70>]}
+[0m19:02:04.833731 [info ] [Thread-1 (]: 3 of 3 OK created sql table model analytics_dev.dim_customers .................. [[32mOK 3[0m in 5.43s]
+[0m19:02:04.833731 [debug] [Thread-1 (]: Finished running node model.tf_docker_dbt.dim_customers
+[0m19:02:04.833731 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:02:04.833731 [debug] [MainThread]: Connection 'list_awsdatacatalog' was properly closed.
+[0m19:02:04.833731 [debug] [MainThread]: Connection 'list_awsdatacatalog_analytics_dev' was properly closed.
+[0m19:02:04.833731 [debug] [MainThread]: Connection 'model.tf_docker_dbt.dim_customers' was properly closed.
+[0m19:02:04.833731 [debug] [MainThread]: Connection 'model.tf_docker_dbt.stg_customers' was properly closed.
+[0m19:02:04.833731 [info ] [MainThread]: 
+[0m19:02:04.833731 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 9.19 seconds (9.19s).
+[0m19:02:04.833731 [debug] [MainThread]: Command end result
+[0m19:02:04.899794 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\manifest.json
+[0m19:02:04.899794 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\semantic_manifest.json
+[0m19:02:04.899794 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\osi_document.json
+[0m19:02:04.916651 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Users\thoma\Documents\Vibe Code\AWS-TF-Docker-DBT\deploy\target\run_results.json
+[0m19:02:04.916651 [info ] [MainThread]: 
+[0m19:02:04.916651 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:02:04.916651 [info ] [MainThread]: 
+[0m19:02:04.916651 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m19:02:04.916651 [debug] [MainThread]: Command `dbt run` succeeded at 19:02:04.916651 after 13.01 seconds
+[0m19:02:04.916651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996C6AD550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996DD03740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996C4BFAD0>]}
+[0m19:02:04.916651 [debug] [MainThread]: Flushing usage events
+[0m19:02:05.516838 [debug] [MainThread]: An error was encountered while trying to flush usage events

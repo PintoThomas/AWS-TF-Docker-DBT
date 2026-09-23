@@ -1,0 +1,12 @@
+tf_docker_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      s3_staging_dir: "s3://tf-docker-dbt-marts-data/athena_query_results/"
+      s3_data_dir: "s3://tf-docker-dbt-marts-data/dbt_marts/"
+      s3_data_naming: "table_unique"
+      region_name: "eu-west-3"
+      database: "awsdatacatalog"
+      schema: "analytics_dev"
+      threads: 4

@@ -1,0 +1,18 @@
+name: 'tf_docker_dbt'
+version: '1.0.0'
+config-version: 2
+
+# 1. Le lien vers profiles.yml
+profile: 'tf_docker_dbt'
+
+# 2. Les dossiers à scanner
+model-paths: ["models"]
+
+# 3. Les règles de matérialisation
+models:
+  tf_docker_dbt:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+      +table_type: iceberg

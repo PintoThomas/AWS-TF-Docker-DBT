@@ -1,0 +1,47 @@
+name: Build and Push dbt Docker Image to AWS ECR
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'deploy/**' 
+      - '.github/workflows/deploy-ecr.yml'
+
+jobs:
+  build-and-push:
+    name: Build & Push to ECR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-3
+
+      # 3. S'authentifier auprès d'AWS ECR
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      # 4. Builder et Pusher l'image Docker
+      - name: Build, Tag and Push Image to ECR
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: tf-docker-dbt-dbt 
+          IMAGE_TAG: ${{ github.sha }}     
+        run: |
+          # 1. Se placer dans le dossier deploy
+          cd deploy
+          
+          # 2. Build de l'image
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -t $ECR_REGISTRY/$ECR_REPOSITORY:latest .
+          
+          # 3. Push de l'image sur ECR (avec le tag du commit ET le tag latest)
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest

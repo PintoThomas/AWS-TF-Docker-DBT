@@ -1,0 +1,11 @@
+# Terraform
+**/infra/.terraform/
+**/infra/.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+
+# dbt
+**/deploy/target/
+**/deploy/logs/
+**/deploy/dbt.log
+**/deploy/.user.yml

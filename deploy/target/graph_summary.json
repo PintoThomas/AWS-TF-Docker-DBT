@@ -1,0 +1,1 @@
+{"_invocation_id": "c26e7bbc-d581-45c7-b362-88a56665e466", "linked": {"0": {"name": "source.tf_docker_dbt.raw_data.raw_customers", "type": "source", "succ": [3]}, "1": {"name": "model.tf_docker_dbt.example", "type": "model"}, "2": {"name": "model.tf_docker_dbt.dim_customers", "type": "model"}, "3": {"name": "model.tf_docker_dbt.stg_customers", "type": "model", "succ": [2]}}}
